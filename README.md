@@ -1,25 +1,58 @@
-# Getting Started with Create React App
+# 📊 Sistema de Calificaciones - Universidad Bíblica Harvest
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+Sistema web para gestión de calificaciones académicas diseñado específicamente para institutos teológicos.
 
-## Available Scripts
+## 🎯 Características Principales
 
-In the project directory, you can run:
+- ✅ **Interfaz tipo Excel**: Diseño familiar para educadores
+- 📱 **Completamente Responsive**: Funciona en móviles, tablets y escritorio
+- 🎨 **Colores Institucionales**: Diseño personalizado para Universidad Bíblica Harvest
+- 📁 **Nombres de Archivo Personalizables**: Elige el nombre antes de descargar
+- 🧮 **Cálculo Automático**: Totales y notas calculados automáticamente
+- 💾 **Export Excel**: Genera archivos .xlsx con formato profesional
 
-### `npm start`
+## 🛠️ Tecnologías
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+- **Frontend**: React 18.2.0
+- **Backend**: FastAPI (Python)
+- **Processing**: pandas, openpyxl
+- **Styling**: CSS-in-JS (Responsive)
+- **Deployment**: Vercel + Railway
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+## 📦 Scripts Disponibles
 
-### `npm test`
+```bash
+# Desarrollo
+npm start          # Ejecuta en modo desarrollo
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+# Producción  
+npm run build      # Crear build para producción
+npm test          # Ejecutar tests
+```
 
-### `npm run build`
+## 🚀 Deploy en Vercel
+
+1. **Commit y Push**:
+```bash
+git add .
+git commit -m "Ready for deployment"
+git push origin main
+```
+
+2. **Deploy en Vercel**:
+   - Ve a [vercel.com](https://vercel.com)
+   - Conecta tu repositorio GitHub
+   - Deploy automático ✅
+
+## 🔧 Próximos Pasos
+
+1. **Subir Backend**: Deploy FastAPI en Railway/Heroku
+2. **Configurar API**: Actualizar URLs en producción  
+3. **Custom Domain**: Agregar dominio personalizado
+
+---
+
+*Desarrollado para Universidad Bíblica Harvest* 🎓
 
 Builds the app for production to the `build` folder.\
 It correctly bundles React in production mode and optimizes the build for the best performance.

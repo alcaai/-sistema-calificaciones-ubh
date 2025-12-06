@@ -1,12 +1,16 @@
 {
-  "name": "excel-ia",
-  "version": "0.1.0",
+  "name": "sistema-calificaciones-ubh",
+  "version": "1.0.0",
+  "description": "Sistema de calificaciones para Universidad Bíblica Harvest",
   "private": true,
+  "homepage": ".",
   "dependencies": {
     "@testing-library/dom": "^10.4.1",
     "@testing-library/jest-dom": "^6.9.1",
     "@testing-library/react": "^16.3.0",
     "@testing-library/user-event": "^13.5.0",
+    "ag-grid-community": "^34.3.1",
+    "ag-grid-react": "^34.3.1",
     "react": "^19.2.1",
     "react-dom": "^19.2.1",
     "react-scripts": "5.0.1",
