@@ -25,7 +25,7 @@ function App() {
   useEffect(() => {
     const testConnection = async () => {
       try {
-        const response = await fetch("http://127.0.0.1:8000/");
+        const response = await fetch("https://web-production-1a944.up.railway.app/");
         const data = await response.json();
         console.log("✅ Backend conectado:", data);
       } catch (error) {
@@ -42,17 +42,15 @@ function App() {
   const createNewTemplate = async () => {
     try {
       setLoading(true);
-      const response = await fetch("http://127.0.0.1:8000/create-empty-template", {
-        method: "POST",
-        headers: { "Content-Type": "application/json" },
-        body: JSON.stringify({ 
-          student_count: studentsCount,
-          materia: materia,
-          fecha_curso: fechaCurso
-        })
-      });
-
-      if (!response.ok) throw new Error(`Error: ${response.status}`);
+        const response = await fetch("https://web-production-1a944.up.railway.app/create-empty-template", {
+          method: "POST",
+          headers: { "Content-Type": "application/json" },
+          body: JSON.stringify({ 
+            student_count: studentsCount,
+            materia: materia,
+            fecha_curso: fechaCurso
+          })
+        });      if (!response.ok) throw new Error(`Error: ${response.status}`);
       
       const data = await response.json();
       setColumnDefs(data.columns.map(col => ({ field: col })));
@@ -76,7 +74,7 @@ function App() {
 
     try {
       setLoading(true);
-      const response = await fetch("http://127.0.0.1:8000/calculate-totals", {
+      const response = await fetch("https://web-production-1a944.up.railway.app/calculate-totals", {
         method: "POST",
         headers: { "Content-Type": "application/json" },
         body: JSON.stringify({ data: rowData })
@@ -108,7 +106,7 @@ function App() {
     }
 
     try {
-      const response = await fetch("http://127.0.0.1:8000/save-grades", {
+      const response = await fetch("https://web-production-1a944.up.railway.app/save-grades", {
         method: "POST",
         headers: { "Content-Type": "application/json" },
         body: JSON.stringify({ 
